@@ -1,0 +1,47 @@
+<div class="container">
+    <h2>User Registrtion</h2>
+    <div>
+
+        <form #login="ngForm" (ngSubmit)="submit(login)" class="form-control">
+            <mat-form-field class="input-field">
+                <input matInput placeholder="User Name" name="username" [ngModel]="username">
+            </mat-form-field>
+
+            <pre></pre>
+
+            <mat-form-field class="input-field">
+                <textarea matInput placeholder="Start typing Address" [ngModel]="address" name="address"></textarea>
+            </mat-form-field>
+
+
+            <pre></pre>
+            <mat-label>Select City</mat-label>
+            <mat-select name="city" [ngModel]="city">
+                <mat-option>Select City</mat-option>
+                <mat-option value="mumbai">Mumbai</mat-option>
+                <mat-option value="banglore">Banglore</mat-option>
+    
+            </mat-select>
+            <pre></pre>
+    
+                <mat-radio-group aria-label="Select an option"[(ngModel)]="gender" name="gender">Select Gender: 
+                    <mat-radio-button name="gender" value="male" ngModel>Male</mat-radio-button>
+                    <mat-radio-button name="gender" value="female" ngModel>Female</mat-radio-button>
+                </mat-radio-group>
+            
+            <pre></pre>
+
+            <button mat-stroked-button class="btn" color="primary" type="submit" value="Submit">Submit</button>
+            <button mat-raised-button class="btn" type="reset" color="warn">Reset </button>
+        </form>
+
+    </div>
+    
+</div>
+<div class="container">
+    <h2></h2>
+    <h2>Name: {{username}}</h2>
+    <h2>Address: {{address}}</h2>
+    <h2>City: {{city}}</h2>
+    <h2>Gender: {{gender}}</h2>
+</div>

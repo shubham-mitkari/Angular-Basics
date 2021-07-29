@@ -1,0 +1,53 @@
+<div class="container">
+    <h2>User Registrtion</h2>
+    <form #login="ngForm" (ngSubmit)="submit(login)">
+        <div>
+            <label for="username">User Name</label>
+            <input required maxlength="10" type="text" class="form-control" name="username" [ngModel]="username">
+        </div>
+        <pre></pre>
+        <diV>
+            <label for="address">Address</label>
+            <textarea class="form-control" name="address" rows="1" [ngModel]="address"></textarea>
+        </diV>
+        <h2></h2>
+        <pre></pre>
+
+        <label for="cars">Select City:</label>
+        <select name="city" class="form-control" [ngModel]="city">
+            <option value="mumbai">Mumbai</option>
+            <option value="banglore">Banglore</option>
+
+        </select>
+
+        <pre></pre>
+        <div>
+
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="form-control">
+                    <label class="radio-inline">
+                        <input type="radio" name="gender" value="male" ngModel>
+                        Male
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="gender" value="female" ngModel>
+                        Female
+                    </label>
+                </div>
+                </div>
+         
+            </div>
+            <pre></pre>
+            <button class="form-control" type="submit" value="Submit">Submit</button>
+            <button type="reset" class="form-control">Reset</button>
+    </form>
+</div>
+
+<div class="container">
+    <h2></h2>
+    <h2>Name: {{username}}</h2>
+    <h2>Address: {{address}}</h2>
+    <h2>City: {{city}}</h2>
+    <h2>Gender: {{gender}}</h2>
+</div>
