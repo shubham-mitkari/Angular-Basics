@@ -1,0 +1,30 @@
+
+.btn{
+    margin-top: 10%;
+}
+.button {
+    // background-color: #4CAF50; /* Green */
+  font-family:  "Helvetica Neue", sans-serif;
+    border: none;
+    color: whitesmoke;
+    padding:  auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+  }
+  .button1{
+      color:black
+  }
+  #rcorners1 {
+      margin: auto;
+      flex :1 1 ;
+    border-radius: 50%;
+    background:white;   
+    padding: 20px; 
+   
+  }
+ 
