@@ -16,7 +16,7 @@ import { MaterialFormComponent } from './components/material-form/material-form.
 import { RealXloginComponent } from './components/real-xlogin/real-xlogin.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
-import { AdminloginComponent } from './components/adminlogin/adminlogin.component';
+
 
 
 
@@ -26,7 +26,7 @@ import { AdminloginComponent } from './components/adminlogin/adminlogin.componen
     FormComponent,
     MaterialFormComponent,
     RealXloginComponent,
-    AdminloginComponent
+  
   ],
   imports: [
     MatCardModule,
